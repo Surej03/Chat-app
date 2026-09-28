@@ -1,0 +1,19 @@
+npm install sanitize-html - sanitize-html allows you to specify the tags you want to permit, and the permitted attributes for each of 
+those tags. If an attribute is a known non-boolean value, and it is empty, it will be removed. For example checked can be empty, but href 
+cannot.
+
+rate limiter - Limits number of requests from a single IP within a time frame (e.g., 5 login attempts per 10 minutes)
+eg :
+Attackers might try to guess passwords by sending 1000s of login requests quickly. Rate limiting stops that by allowing 
+only X requests per IP per timeframe. In short, it prevents brute force
+
+Helmet - Helmet sets various HTTP security headers automatically to protect your app from:
+
+| Attack Type                | Helmet Header Example       |
+| -------------------------- | --------------------------- |
+| Cross-site scripting (XSS) | `X-XSS-Protection`          |
+| Clickjacking               | `X-Frame-Options`           |
+| MIME-sniffing              | `X-Content-Type-Options`    |
+| HSTS (HTTPS enforcement)   | `Strict-Transport-Security` |
+
+
